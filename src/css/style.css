@@ -1,0 +1,826 @@
+* {
+  font-family: "Roboto", sans-serif; }
+
+nav {
+  height: 50px;
+  background: #212121;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+header {
+  position: relative; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  margin: 0; }
+  .menu_link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none; }
+    .menu_link:hover {
+      color: #1EACC7; }
+
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 87px;
+  background: rgba(0, 0, 0, 0.6);
+  mix-blend-mode: normal;
+  z-index: 0;
+  margin-top: 50px; }
+  .subheader_img {
+    margin-top: 19px;
+    display: block; }
+  .subheader_offical {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF; }
+  .subheader_phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none; }
+    .subheader_phone:hover {
+      color: #1EACC7; }
+  .subheader_call {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 8px;
+    transform: translateX(22px);
+    margin-top: 20px; }
+  .subheader_btn {
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    display: block;
+    margin-top: 20px; }
+    .subheader_btn:hover {
+      background-image: none;
+      background-color: #1EACC7; }
+
+.promo {
+  height: 850px;
+  background: url("../img/uber_bg.jpg") center center/cover no-repeat;
+  padding: 50px 0 180px 0; }
+  .promo_header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 134px;
+    text-align: center; }
+  .promo_subheader {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center; }
+  .promo_descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px; }
+  .promo_btn {
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 116px;
+    position: absolute;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 63px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21); }
+    .promo_btn:hover {
+      background-image: none;
+      background-color: #1EACC7; }
+
+.reasons {
+  height: 850px; }
+  .reasons_block {
+    display: flex;
+    justify-content: center; }
+  .reasons_descr {
+    width: 339px;
+    margin-bottom: 26px;
+    margin-left: 25px; }
+  .reasons_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #1EACC7; }
+  .reasons_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    display: flex;
+    align-items: center; }
+  .reasons_round {
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.label {
+  width: 115px;
+  height: 27px;
+  padding: 5px 12px;
+  background: #000000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; }
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 16px; }
+
+.features {
+  height: 860px;
+  background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
+  padding: 20px 0 80px 0; }
+  .features_block {
+    display: flex;
+    justify-content: center; }
+  .features_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 85px; }
+  .features_more {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: #000000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 217px 145px 35px 145px;
+    cursor: pointer; }
+    .features_more::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 25%;
+      bottom: 48%;
+      width: 14px;
+      height: 2px;
+      background-color: #1EACC7; }
+    .features_more::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 45%;
+      bottom: 30%;
+      width: 2px;
+      height: 14px;
+      background-color: #1EACC7; }
+  .features_img {
+    display: block;
+    width: 320px;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+    background: url("../img/01.png") center center/cover no-repeat; }
+
+.img_wrap {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  vertical-align: middle; }
+
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 30px; }
+
+.reservation {
+  height: 900px;
+  background: url("../img/bg4.png") center center/cover no-repeat;
+  padding: 55px 0 135px 0; }
+  .reservation_car {
+    display: block;
+    margin: 0 auto; }
+  .reservation_label {
+    width: 115px;
+    height: 27px;
+    padding: 5px 12px;
+    background: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    background: #FFFFFF;
+    color: #000000; }
+  .reservation_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 16px;
+    color: #FFFFFF; }
+  .reservation_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    margin-bottom: 55px; }
+
+.offer {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222; }
+
+.condition {
+  height: 920px;
+  margin: 68px 0 87px 0; }
+  .condition_title {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #1CA8C3; }
+  .condition_red {
+    color: #FF5656; }
+  .condition_descr {
+    margin-bottom: 65px;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #1CA8C3; }
+  .condition_list {
+    list-style-type: none;
+    padding-left: 52px;
+    margin-top: 22px; }
+    .condition_list li {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      align-items: center;
+      line-height: 30px;
+      color: #222222;
+      position: relative; }
+      .condition_list li::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -33px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 21px;
+        height: 20px;
+        background: url("../img/check_blue.png") center center/cover no-repeat; }
+
+.requirement_list {
+  list-style-type: none;
+  padding-left: 52px;
+  margin-top: 22px; }
+  .requirement_list li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    align-items: center;
+    line-height: 30px;
+    color: #222222;
+    position: relative; }
+    .requirement_list li::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -33px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 21px;
+      height: 20px;
+      background: url("../img/check_red.png") center center/cover no-repeat; }
+
+.world {
+  height: 720px;
+  padding: 50px 0 50px 0;
+  background: url("../img/world_bg.png") center center/cover no-repeat; }
+
+.city_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  margin-top: 450px;
+  text-decoration: none; }
+  .city_link:hover {
+    color: #FFFFFF; }
+
+footer {
+  height: 155px;
+  padding: 11px 25px 50px 25px; }
+
+.footer_round {
+  width: 35px;
+  height: 35px;
+  background: #070716;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px; }
+
+.icons {
+  display: flex;
+  margin-top: 50px;
+  width: 291px; }
+
+.divider {
+  width: 301px;
+  height: 5px;
+  background: #1FBAD6;
+  display: block;
+  margin: 0 auto; }
+
+.basic_links {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #070716;
+  text-decoration: none; }
+
+.second_links {
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999999;
+  text-decoration: none;
+  margin-right: 23px; }
+
+.footer_content_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.main_links {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; }
+
+.links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px; }
+  .links_block {
+    text-align: center; }
+
+.download_links {
+  margin-top: 50px; }
+
+.russian {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  margin-top: 17px; }
+
+.xs-visible {
+  display: none; }
+
+.footer_mobile {
+  display: none; }
+
+.li_mobile {
+  display: none; }
+
+@media (max-width: 1200px) {
+  .menu_link {
+    font-size: 13px; }
+
+  .promo_header {
+    font-size: 45px; }
+  .promo_subheader {
+    font-size: 35px; }
+
+  .reasons_text {
+    font-size: 13px; }
+  .reasons_round {
+    width: 100px;
+    height: 100px; }
+
+  .features_img {
+    width: 310px; }
+
+  .basic_links {
+    font-size: 13px; } }
+@media (max-width: 991px) {
+  .menu {
+    padding: 10px 13px; }
+    .menu_link {
+      font-size: 13px; }
+
+  .subheader_img {
+    width: 250px; }
+  .subheader_offical {
+    font-size: 12px; }
+  .subheader_phone {
+    font-size: 21px; }
+
+  .promo_header {
+    font-size: 40px; }
+  .promo_subheader {
+    font-size: 27px; }
+
+  .reasons {
+    height: 1310px; }
+    .reasons_block {
+      display: block; }
+    .reasons_img {
+      display: flex;
+      justify-content: center; }
+    .reasons_round {
+      margin-bottom: 25px; }
+
+  .title {
+    font-size: 34px; }
+
+  .reservation {
+    height: 710px; }
+    .reservation_car {
+      width: 100%; }
+
+  .features {
+    height: 1190px; }
+
+  .condition {
+    height: 970px; }
+    .condition_descr {
+      margin-bottom: 0px; }
+
+  .world {
+    height: 460px; }
+
+  .city_link {
+    margin-top: 170px; }
+
+  .download_links {
+    margin-top: 29px; }
+
+  .img_download {
+    display: block;
+    margin-top: 8px; }
+
+  .footer_round {
+    margin-left: 5px; }
+
+  .icons {
+    width: 170px; }
+
+  .links {
+    width: 50%; } }
+@media (max-width: 768px) {
+  .menu_link {
+    font-size: 0px; }
+
+  .subheader_img {
+    width: 210px; }
+  .subheader_offical {
+    display: none; }
+  .subheader_call {
+    display: none; }
+  .subheader_btn {
+    margin-top: 2px;
+    margin-left: 70px; }
+
+  .xs-hidden {
+    display: none; }
+
+  .xs-visible {
+    display: block;
+    margin-left: 90px;
+    font-size: 17px; }
+
+  .promo {
+    height: 660px; }
+    .promo_descr {
+      display: none; }
+    .promo_header {
+      font-size: 52px; }
+    .promo_subheader {
+      font-size: 33px;
+      margin-top: 34px; }
+    .promo_btn {
+      margin-top: 70px; }
+
+  .title {
+    font-size: 26px; }
+
+  .reasons {
+    height: 3180px; }
+    .reasons_descr {
+      margin: 0 auto;
+      margin-bottom: 20px; }
+    .reasons_round {
+      width: 130px;
+      height: 130px; }
+    .reasons_subtitle {
+      font-size: 23px;
+      margin-bottom: 10px;
+      line-height: 27px; }
+    .reasons_text {
+      font-size: 20px;
+      line-height: 24px; }
+
+  .label {
+    font-size: 16px;
+    width: 160px;
+    height: 45px;
+    padding: 10px 8px; }
+
+  .reservation_label {
+    font-size: 16px;
+    width: 160px;
+    height: 45px;
+    padding: 10px 8px; }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 30px; }
+
+  .features {
+    height: 2110px; }
+
+  .reservation {
+    height: 655px;
+    background: url("../img/bg.car.png") center center/cover no-repeat; }
+    .reservation_label {
+      margin-bottom: 40px; }
+
+  .offer {
+    color: #FFFFFF;
+    font-size: 29px;
+    line-height: 37px; }
+
+  .condition {
+    height: 1480px; }
+    .condition_title {
+      font-size: 29px;
+      margin-top: 35px; }
+    .condition_list li {
+      font-size: 25px; }
+      .condition_list li::before {
+        left: -45px;
+        width: 30px;
+        height: 28px; }
+    .condition_descr {
+      font-size: 24px;
+      line-height: 36px;
+      margin-top: 35px; }
+
+  .reservation_title {
+    display: block;
+    font-size: 30px; }
+
+  .reservation_subtitle {
+    display: block;
+    font-size: 25px; }
+
+  .requirement_list li {
+    font-size: 25px; }
+    .requirement_list li::before {
+      left: -45px;
+      width: 30px;
+      height: 28px; }
+
+  .reservation_mobile {
+    display: none; }
+
+  .reservation_mobile {
+    display: none; }
+
+  .world {
+    height: 580px; }
+
+  .city_link {
+    font-size: 20px;
+    margin-top: 285px; }
+
+  .footer {
+    display: none; }
+
+  .footer_mobile {
+    display: block; }
+
+  .links {
+    width: 100%; }
+    .links_block {
+      margin-top: 10px; }
+
+  .second_links {
+    font-size: 19px;
+    line-height: 45px; }
+
+  .basic_links {
+    font-size: 22px; }
+
+  .russian {
+    font-size: 16px;
+    margin-top: 4px; }
+
+  .icons {
+    margin-top: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+  .download_links {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-around; }
+
+  .li_desctop {
+    display: none; }
+
+  .li_mobile {
+    display: block; } }
+@media (max-width: 575px) {
+  .subheader_img {
+    width: 190px; }
+  .subheader_btn {
+    margin-left: 15px; }
+  .subheader_phone {
+    font-size: 13px; }
+
+  .promo {
+    height: 570px; }
+    .promo_header {
+      font-size: 36px; }
+    .promo_subheader {
+      font-size: 27px; }
+
+  .title {
+    font-size: 20px; }
+
+  .features {
+    height: 2140px; }
+
+  .reservation {
+    height: 560px; }
+    .reservation_label {
+      margin: 0 auto; }
+    .reservation_car {
+      margin: 30px auto; }
+
+  .offer {
+    font-size: 24px;
+    line-height: 33px; }
+
+  .condition {
+    height: 1290px;
+    margin: 35px 15px 85px 15px; }
+    .condition_title {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-left: 15px; }
+    .condition_list li {
+      font-size: 16px; }
+      .condition_list li::before {
+        left: -37px;
+        width: 25px;
+        height: 24px; }
+    .condition_descr {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 17px;
+      margin-left: 15px; }
+
+  .requirement_list li {
+    font-size: 16px; }
+    .requirement_list li::before {
+      left: -37px;
+      width: 25px;
+      height: 24px; }
+
+  .label, .reservation_label {
+    width: 115px;
+    height: 27px;
+    padding: 5px 12px;
+    font-size: 11px; }
+
+  .reservation_title {
+    font-size: 25px;
+    margin-top: 20px; }
+
+  .reservation_subtitle {
+    font-size: 20px; }
+
+  .world {
+    height: 520px; }
+
+  footer {
+    height: 155px;
+    padding: 20px 25px 50px 25px; }
+
+  .basic_links {
+    font-size: 17px; }
+
+  .second_links {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=style.css.map */
